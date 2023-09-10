@@ -118,22 +118,22 @@ def inference(img, version, scale):
 
         if version == 'v1.2':
             face_enhancer = GFPGANer(
-            model_path='C:/Users/Varun Valsan/Desktop/FaceSwap/faceswap/Application/models/GFPGANv1.2.pth', upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=upsampler)
+            model_path='./models/GFPGANv1.2.pth', upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=upsampler)
         elif version == 'v1.3':
             face_enhancer = GFPGANer(
-            model_path='C:/Users/Varun Valsan/Desktop/FaceSwap/faceswap/Application/models/GFPGANv1.3.pth', upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=upsampler)
+            model_path='./models/GFPGANv1.3.pth', upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=upsampler)
         elif version == 'v1.4':
             face_enhancer = GFPGANer(
-            model_path='C:/Users/Varun Valsan/Desktop/FaceSwap/faceswap/Application/models/GFPGANv1.4.pth', upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=upsampler)
+            model_path='./models/GFPGANv1.4.pth', upscale=2, arch='clean', channel_multiplier=2, bg_upsampler=upsampler)
         elif version == 'RestoreFormer':
             face_enhancer = GFPGANer(
-            model_path='C:/Users/Varun Valsan/Desktop/FaceSwap/faceswap/Application/models/RestoreFormer.pth', upscale=2, arch='RestoreFormer', channel_multiplier=2, bg_upsampler=upsampler)
+            model_path='./models/RestoreFormer.pth', upscale=2, arch='RestoreFormer', channel_multiplier=2, bg_upsampler=upsampler)
         elif version == 'CodeFormer':
              face_enhancer = GFPGANer(
-             model_path='C:/Users/Varun Valsan/Desktop/FaceSwap/faceswap/Application/models/CodeFormer.pth', upscale=2, arch='CodeFormer', channel_multiplier=2, bg_upsampler=upsampler)
+             model_path='./models/CodeFormer.pth', upscale=2, arch='CodeFormer', channel_multiplier=2, bg_upsampler=upsampler)
         elif version == 'RealESR-General-x4v3':
              face_enhancer = GFPGANer(
-             model_path='C:/Users/Varun Valsan/Desktop/FaceSwap/faceswap/Application/models/realesr-general-x4v3.pth', upscale=2, arch='realesr-general', channel_multiplier=2, bg_upsampler=upsampler)
+             model_path='./models/realesr-general-x4v3.pth', upscale=2, arch='realesr-general', channel_multiplier=2, bg_upsampler=upsampler)
 
         try:
             # _, _, output = face_enhancer.enhance(img, has_aligned=False, only_center_face=False, paste_back=True, weight=weight)
